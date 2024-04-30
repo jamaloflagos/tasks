@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Move to frontend') {
+      steps {
+        sh 'cd frontend && ls'
+      }
+    }
+
   }
 }
